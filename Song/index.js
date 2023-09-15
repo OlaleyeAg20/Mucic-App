@@ -151,7 +151,6 @@ function playPause() {
  playBtn.style.display = 'inline'
         }
     else  { 
-             function(){
  startAnimation()
  playingTrack.play()
  pauseBtn.style.display = 'inline'
@@ -168,7 +167,6 @@ timeInMin.textContent = timeFunc(initialMinute)
 timeInSec.textContent = timeFunc(initialSeconds)
  }, 1000)
 }
-        }
 } 
 
 document.onkeydown = function(event) {
