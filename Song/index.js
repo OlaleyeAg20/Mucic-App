@@ -99,7 +99,6 @@ pauseAnimation()
 songIndex--
 if(songIndex == 0){
   prevBtn.disabled = true
- songIndex = songList.length
 }
 title.textContent = songList[songIndex].songTitle
 if(songIndex == songList.length){songIndex = 0}
