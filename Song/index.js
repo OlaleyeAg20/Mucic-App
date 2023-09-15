@@ -88,7 +88,6 @@ animationContainer.style.display = 'flex'
 loadContainer.style.display = 'none'
 displayFunction()
 startAnimation()
-console.log(index)
 }
 }
 
