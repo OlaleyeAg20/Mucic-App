@@ -33,7 +33,9 @@ downloadBtn.href = songList[songIndex].sourceFile
 playingTrack.src = songList[songIndex].sourceFile
 playingTrack.load()
 
-playBtn.addEventListener('click', function(){
+playBtn.addEventListener('click', playEvent)
+
+function playEvent(){
  startAnimation()
  playingTrack.play()
  pauseBtn.style.display = 'inline'
@@ -49,14 +51,16 @@ let initialSeconds =   currentSec % 60
 timeInMin.textContent = timeFunc(initialMinute)
 timeInSec.textContent = timeFunc(initialSeconds)
  }, 1000)
-})
+}
 
-pauseBtn.addEventListener('click', function(){
+pauseBtn.addEventListener('click', pauseEvent)
+
+function pauseEvent(){
  pauseAnimation()
  playingTrack.pause()
  pauseBtn.style.display = 'none'
  playBtn.style.display = 'inline'
-})
+}
 
 playingTrack.addEventListener('ended', nextEvent)
 
@@ -145,28 +149,8 @@ function displayFunction(){
 
 function playPause() { 
     if (playingTrack.paused) {
-     startAnimation()
- playingTrack.play()
- pauseBtn.style.display = 'inline'
- playBtn.style.display = 'none'
- setInterval(function(){
-    let currentSec = Math.floor(playingTrack.currentTime)
-    let currentSecInPercent = (currentSec / playingTrack.duration)*100
-    if(currentSec != Math.floor(playingTrack.duration)){
-    progressBar.style.width = `${currentSecInPercent}%`
-    }
-    let initialMinute = Math.floor( currentSec / 60 )
-let initialSeconds =   currentSec % 60
-timeInMin.textContent = timeFunc(initialMinute)
-timeInSec.textContent = timeFunc(initialSeconds)
- }, 1000)
-        }
-    else  { 
- pauseAnimation()
- playingTrack.pause()
- pauseBtn.style.display = 'none'
- playBtn.style.display = 'inline'
-}
+     playEvent
+        }else{ pauseEvent() }
 } 
 
 document.onkeydown = function(event) {
