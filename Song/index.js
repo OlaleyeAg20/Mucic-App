@@ -142,3 +142,23 @@ function displayFunction(){
   pauseBtn.style.display = 'inline'
   playBtn.style.display = 'none'
 }
+
+function playPause() { 
+    if (playingTrack.paused) {
+            playingTrack.play();
+        }
+    else  {
+            playingTrack.pause();
+        }
+} 
+
+document.onkeydown = function(event) {
+    switch (event.keyCode) {
+       
+       case 32:
+            event.preventDefault();
+            playPause();
+          break;
+       
+    }
+};
