@@ -145,10 +145,31 @@ function displayFunction(){
 
 function playPause() { 
     if (playingTrack.paused) {
-            playingTrack.play();
+             function(){
+ startAnimation()
+ playingTrack.play()
+ pauseBtn.style.display = 'inline'
+ playBtn.style.display = 'none'
+ setInterval(function(){
+    let currentSec = Math.floor(playingTrack.currentTime)
+    let currentSecInPercent = (currentSec / playingTrack.duration)*100
+    if(currentSec != Math.floor(playingTrack.duration)){
+    progressBar.style.width = `${currentSecInPercent}%`
+    }
+    let initialMinute = Math.floor( currentSec / 60 )
+let initialSeconds =   currentSec % 60
+timeInMin.textContent = timeFunc(initialMinute)
+timeInSec.textContent = timeFunc(initialSeconds)
+ }, 1000)
+}
         }
     else  {
-            playingTrack.pause();
+            function(){
+ pauseAnimation()
+ playingTrack.pause()
+ pauseBtn.style.display = 'none'
+ playBtn.style.display = 'inline'
+}
         }
 } 
 
