@@ -145,13 +145,7 @@ function displayFunction(){
 
 function playPause() { 
     if (playingTrack.paused) {
- pauseAnimation()
- playingTrack.pause()
- pauseBtn.style.display = 'none'
- playBtn.style.display = 'inline'
-        }
-    else  { 
- startAnimation()
+     startAnimation()
  playingTrack.play()
  pauseBtn.style.display = 'inline'
  playBtn.style.display = 'none'
@@ -166,6 +160,12 @@ let initialSeconds =   currentSec % 60
 timeInMin.textContent = timeFunc(initialMinute)
 timeInSec.textContent = timeFunc(initialSeconds)
  }, 1000)
+        }
+    else  { 
+ pauseAnimation()
+ playingTrack.pause()
+ pauseBtn.style.display = 'none'
+ playBtn.style.display = 'inline'
 }
 } 
 
