@@ -159,7 +159,9 @@ document.onkeydown = (e) => {
   } else if (e.keyCode === 40) {
     console.log("down arrow pressed");
   } else if (e.keyCode === 37) {
-    prevEvent()
+    if(songIndex != 0 || songIndex < 0){
+     prevEvent()
+    }
   } else if (e.keyCode === 39) {
     nextEvent()
   }
