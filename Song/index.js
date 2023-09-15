@@ -145,12 +145,10 @@ function displayFunction(){
 
 function playPause() { 
     if (playingTrack.paused) {
-             function play(){
  pauseAnimation()
  playingTrack.pause()
  pauseBtn.style.display = 'none'
  playBtn.style.display = 'inline'
-}
         }
     else  { 
              function(){
