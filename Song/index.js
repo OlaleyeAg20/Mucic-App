@@ -99,6 +99,7 @@ pauseAnimation()
 songIndex--
 if(songIndex == 0){
   prevBtn.disabled = true
+ songIndex = songList.length
 }
 title.textContent = songList[songIndex].songTitle
 if(songIndex == songList.length){songIndex = 0}
@@ -162,3 +163,18 @@ document.onkeydown = function(event) {
        
     }
 };
+
+document.onkeydown = (e) => {
+  e = e || window.event;
+  if (e.keyCode === 38) {
+    console.log("up arrow pressed");
+  } else if (e.keyCode === 40) {
+    console.log("down arrow pressed");
+  } else if (e.keyCode === 37) {
+    prevEvent()
+  } else if (e.keyCode === 39) {
+    nextEvent()
+  }
+};
+
+
