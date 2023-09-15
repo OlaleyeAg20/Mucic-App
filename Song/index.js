@@ -148,7 +148,7 @@ function displayFunction(){
 
 function playPause() { 
     if (playingTrack.paused) {
-     playEvent
+     playEvent()
         }else{ pauseEvent() }
 } 
 
