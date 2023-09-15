@@ -146,6 +146,14 @@ function displayFunction(){
 function playPause() { 
     if (playingTrack.paused) {
              function(){
+ pauseAnimation()
+ playingTrack.pause()
+ pauseBtn.style.display = 'none'
+ playBtn.style.display = 'inline'
+}
+        }
+    else  { 
+             function(){
  startAnimation()
  playingTrack.play()
  pauseBtn.style.display = 'inline'
@@ -161,14 +169,6 @@ let initialSeconds =   currentSec % 60
 timeInMin.textContent = timeFunc(initialMinute)
 timeInSec.textContent = timeFunc(initialSeconds)
  }, 1000)
-}
-        }
-    else  {
-            function(){
- pauseAnimation()
- playingTrack.pause()
- pauseBtn.style.display = 'none'
- playBtn.style.display = 'inline'
 }
         }
 } 
