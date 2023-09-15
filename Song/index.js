@@ -145,7 +145,7 @@ function displayFunction(){
 
 function playPause() { 
     if (playingTrack.paused) {
-             function(){
+             function play(){
  pauseAnimation()
  playingTrack.pause()
  pauseBtn.style.display = 'none'
