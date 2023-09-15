@@ -153,17 +153,6 @@ function playPause() {
         }else{ pauseEvent() }
 } 
 
-document.onkeydown = function(event) {
-    switch (event.keyCode) {
-       
-       case 32:
-            event.preventDefault();
-            playPause();
-          break;
-       
-    }
-};
-
 document.onkeydown = (e) => {
   e = e || window.event;
   if (e.keyCode === 38) {
@@ -175,6 +164,14 @@ document.onkeydown = (e) => {
   } else if (e.keyCode === 39) {
     nextEvent()
   }
+ switch (e.keyCode) {
+       
+       case 32:
+            e.preventDefault();
+            playPause();
+          break;
+       
+    }
 };
 
 
