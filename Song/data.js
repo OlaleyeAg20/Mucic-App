@@ -24,11 +24,11 @@ const songList = [
   artist: "Pheelz ft Buju",
   sourceFile: "music/Pheelz-Ft-Buju-Finesse-(TrendyBeatz.com).mp3",
  },
-/* {
+ {
   songTitle: "At My Worst",
   artist: "Unknown",
   sourceFile: "music/atmyworst.mp3",
- },*/
+ },
  {
   songTitle: "Anabella",
   artist: "Khaid",
