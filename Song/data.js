@@ -55,11 +55,6 @@ const songList = [
   sourceFile: "music/cough(remix).mp3",
  },
   {
-  songTitle: "Party no dey stop",
-  artist: "Adekunle Gold ft Zinoleesky",
-  sourceFile: "music/Party no dey stop.mp3",
- },
-  {
   songTitle: "Come and Go",
   artist: "Ardee",
   sourceFile: "music/come and go.mp3",
@@ -78,11 +73,6 @@ const songList = [
   songTitle: "Confession-AV",
   artist: "AV",
   sourceFile: "music/Confession-AV.mp3",
- },
-  {
-  songTitle: "Koleyewon",
-  artist: "Naira Marley",
-  sourceFile: "music/Naira-Marley-Koleyewon.mp3",
  },
  {
   songTitle: "Celebrate Me",
