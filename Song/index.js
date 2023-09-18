@@ -175,7 +175,7 @@ document.onkeydown = (e) => {
     }
 };
 
-If(playingTrack.pause()){
+if(playingTrack.pause()){
  pauseEvent()
 }else{playEvent()}
 
