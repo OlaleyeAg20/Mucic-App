@@ -1,4 +1,34 @@
 const songList = [
+  {
+songTitle: "walking dead(late Mohbad 😥)",
+artist: "Mohbad",
+sourceFile: "music/Mohbad-Walking-Dead-(JustNaija.com).mp3",
+},
+{
+songTitle: "Feel-Good(late Mohbad 😥)",
+artist: "Mohbad",
+sourceFile: "music/Mohbad-Feel-Good-(TrendyBeatz.com).mp3",
+},
+  {
+songTitle: "La pio pio(late Mohbad 😥)",
+artist: "Mohbad",
+sourceFile: "music/Mohbad-La-Pio-Pio-(JustNaija.com).mp3",
+},
+  {
+songTitle: "Sabi(late Mohbad 😥)",
+artist: "Mohbad",
+sourceFile: "music/Mohbad-Sabi-(JustNaija.com).mp3",
+},
+  {
+songTitle: "Father Abraham(late Mohbad 😥)",
+artist: "Mohbad",
+sourceFile: "music/Mohbad-Father-Abraham-(JustNaija.com).mp3",
+},
+  {
+songTitle: "Ronaldo(late Mohbad 😥)",
+artist: "Mohbad",
+sourceFile: "music/Mohbad_-_Ronaldo.mp3",
+},
 {
   songTitle: "Comment Ne Pas",
   artist: "Philip Beli",
