@@ -175,8 +175,4 @@ document.onkeydown = (e) => {
     }
 };
 
-if(playingTrack.pause()){
- pauseEvent()
-}else{playEvent()}
-
 
