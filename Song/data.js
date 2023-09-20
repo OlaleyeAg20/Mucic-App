@@ -4,7 +4,7 @@ const songList = [
 artist: "Ed Sheeran",
 sourceFile: "music/Ed_Sheeran_-_Castle_On_The_Hill_ObaMedia.Com.Ng.mp3",
 },
-songTitle: "walking dead(late Mohbad 😥)",
+{songTitle: "walking dead(late Mohbad 😥)",
 artist: "Mohbad",
 sourceFile: "music/Mohbad-Walking-Dead-(JustNaija.com).mp3",
 },
