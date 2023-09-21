@@ -1,5 +1,10 @@
 const songList = [
   {
+    songTitle: "Coming_for_You",
+artist: "SwitchOTR",
+sourceFile: "music/SwitchOTR_-_Coming_for_You.mp3",
+},
+  {
     songTitle: "Ed Sheeran Castle On The Hill",
 artist: "Ed Sheeran",
 sourceFile: "music/Ed_Sheeran_-_Castle_On_The_Hill_ObaMedia.Com.Ng.mp3",
