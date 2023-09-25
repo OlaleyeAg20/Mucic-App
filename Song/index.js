@@ -50,6 +50,7 @@ function playEvent(){
 let initialSeconds =   currentSec % 60
 timeInMin.textContent = timeFunc(initialMinute)
 timeInSec.textContent = timeFunc(initialSeconds)
+  playPause()
  }, 1000)
 }
 
