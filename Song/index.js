@@ -50,7 +50,9 @@ function playEvent(){
 let initialSeconds =   currentSec % 60
 timeInMin.textContent = timeFunc(initialMinute)
 timeInSec.textContent = timeFunc(initialSeconds)
-  playPause()
+  if (playingTrack.paused) {
+     playEvent()
+        }else{ pauseEvent() }
  }, 1000)
 }
 
