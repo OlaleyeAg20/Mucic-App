@@ -50,6 +50,9 @@ function playEvent(){
 let initialSeconds =   currentSec % 60
 timeInMin.textContent = timeFunc(initialMinute)
 timeInSec.textContent = timeFunc(initialSeconds)
+  if (playingTrack.paused) {
+     pauseAnimation()
+        }else{ startAnimation() }
  }, 1000)
 }
 
