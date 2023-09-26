@@ -52,7 +52,13 @@ timeInMin.textContent = timeFunc(initialMinute)
 timeInSec.textContent = timeFunc(initialSeconds)
   if (playingTrack.paused) {
      pauseAnimation()
-        }else{ startAnimation() }
+     pauseBtn.style.display = 'none'
+     playBtn.style.display = 'inline'
+        }else{
+   startAnimation()
+   pauseBtn.style.display = 'inline'
+     playBtn.style.display = 'none'
+  }
  }, 1000)
 }
 
