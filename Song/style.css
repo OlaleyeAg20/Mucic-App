@@ -82,21 +82,22 @@ body{
  }
 }
 .progress-container{
+.progress-container{
  width: 100%;
  background: #F1F1F180;
  border-radius: 20px;
- height: 8px;
+ height: 4px;
  margin: 10vh auto 20px;
  cursor: pointer;
 }
 .progress-bar{
  background: #1CC00D;
  width: 0px;
- height: 8px;
+ height: 4px;
  position: relative;
  border-radius: 20px;
  cursor: pointer;
-}
+  }
 .timer{
  margin-bottom: 30px;
  color: #f1f1f1;
@@ -105,15 +106,16 @@ body{
  width: 100%;
 }
 .circle{
+ circle{
  background: #F1F1F1;
- width: 25px;
- height: 25.0px;
+ width: 10px;
+ height: 10.0px;
  border-radius: 50%;
  position: absolute;
+ top; 0;
  right: 0;
- top: 0;
- transform: translate(12px, -8px);
-}
+ transform: translate(1px, -3px);
+ }
 .song-name{
  width: 100%;
  margin: 25px auto;
