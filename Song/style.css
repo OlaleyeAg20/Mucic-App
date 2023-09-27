@@ -1,3 +1,5 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
 *{
  box-sizing: border-box;
 }
@@ -96,7 +98,7 @@ body{
  position: relative;
  border-radius: 20px;
  cursor: pointer;
-  }
+}
 .timer{
  margin-bottom: 30px;
  color: #f1f1f1;
@@ -105,7 +107,6 @@ body{
  width: 100%;
 }
 .circle{
- circle{
  background: #F1F1F1;
  width: 10px;
  height: 10.0px;
@@ -114,7 +115,7 @@ body{
  top; 0;
  right: 0;
  transform: translate(1px, -3px);
- }
+}
 .song-name{
  width: 100%;
  margin: 25px auto;
@@ -128,10 +129,11 @@ body{
  
 }
 .buttons > button{
+ background : #B4B9BF;
 /* border: 5px solid #2BF7F6;
  border-radius: 50%;*/
- background: none;
  border: none;
+ border-radius: 50%;
  width: 50px;
  height: 50px;
  outline: none;
@@ -161,4 +163,55 @@ i{
 }
 .link > i{
  color: #F1F1F1;
+}
+
+.songList{
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70vh;
+  overflow: scroll;
+  background: #F1F1f1;
+  border-radius: 1.2rem 1.2rem 0 0;
+  padding: 2rem 1rem 0;
+}
+
+.songDetails{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  width: 98%;
+  aspect-ratio: 4/1;
+  background: #DFE5EC;
+  border-radius: 8px;
+}
+
+.songImg{
+  width: 70px;
+  height: 70px;
+  background: #B4B9BF;
+  border-radius: 50%;
+}
+
+.songTitle{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+#artistName, #song-name{
+  color: #212121;
+  margin-block: 0.5rem auto;
+}
+#song-name{
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
 }
