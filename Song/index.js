@@ -190,9 +190,6 @@ document.onkeydown = (e) => {
 
 containerDiv.innerHTML = songList.map(function(e){
     const { songTitle, sourceFile, artist} = e
- document.getElementById("song-name").addEventListener("click", function(){
-   playingTrack.src = sourceFile
-   })
     return `
    <div class="songDetails">
      <img src="icon.png" class="songImg">
