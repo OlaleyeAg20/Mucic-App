@@ -192,7 +192,7 @@ containerDiv.innerHTML = songList.map(function(e){
     const { songTitle, sourceFile, artist} = e
     return `
    <div class="songDetails">
-     <img src=""icon.png"" class="songImg">
+     <img src="icon.png" class="songImg">
      <div class="songTitle">
      <span id="song-name">${songTitle}</span>
      <span id="artistName">${artist} <a id="listDownloadBtn" href="${sourceFile}" download><i class="fa down fa-download"></i></a></span>
