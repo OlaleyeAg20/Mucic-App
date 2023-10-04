@@ -201,6 +201,12 @@ containerDiv.innerHTML = songList.map(function(e){
     `
 }).join('')
 
+songList.forEach(function(e){
+ document.getElementById("songTitle").addEventListener("click", function(e){
+  songIndex = songList.indexOf(e)
+ })
+})
+
 listBtn.addEventListener("click", function(){
   containerDiv.style.display = "flex"
   closeListBtn.style.display = "block"
@@ -208,8 +214,4 @@ listBtn.addEventListener("click", function(){
 closeListBtn.addEventListener("click", function(){
   containerDiv.style.display = "none"
   closeListBtn.style.display = "none"
-})
-
-document.getElementById("song-name").addEventListener("click", function(){
-  songIndex = songList.indexOf(e)
 })
