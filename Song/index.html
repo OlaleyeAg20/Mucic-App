@@ -4,7 +4,6 @@
  <meta charset="UTF-8">
  <link rel="icon" href="icon.png">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="color" content="green">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  <title>Music Player</title>
  <link rel="stylesheet" href="style.css">
@@ -31,17 +30,26 @@
    </div>
   </div>
   <div id="timer" class="timer">
-   <span><span id="timeInMin">00</span>:<span id="timeInSec">00</span></span>
-   <span><span id="finalTimeInMin">00</span>:<span id="finalTimeInSec">00</span></span>
+   <span>
+     <span id="timeInMin">00</span>:<span id="timeInSec">00</span>
+   </span>
+   <span>
+     <span id="finalTimeInMin">00</span>:<span id="finalTimeInSec">00</span>
+     </span>
   </div>
   <div id="buttons" class="buttons">
-   <button id="prev" disabled><i class="fa fa-fast-backward"></i></button>
+   <button id="prev"><i class="fa fa-fast-backward"></i></button>
    <button id="playBtn" ><i class="fa fa-play"></i></button>
    <button id="pauseBtn" class="paused"><i class="fa fa-pause"></i></button>
    <button id="next"><i class="fa fa-fast-forward"></i></button>
   </div>
-  <a href="" id="link" class="link" download><i class="fa fa-download"></i></a>
+  <button id="listBtn" class="listBtn"><i class="fa-solid fa-list"></i></button>
+  <button id="closeListBtn" class="closeListBtn"><i class="fa-solid fa-close"></i></button>
+  <div>
+    <a id="link" class="link" download><i class="fa fa-download"></i></a>
+  </div>
  </div>
+ <div class="songList" id="songList"></div>
  <script type="module" src="/index.js"></script>
 </body>
 </html>
