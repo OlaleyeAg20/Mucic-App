@@ -112,7 +112,7 @@ body{
  height: 10.0px;
  border-radius: 50%;
  position: absolute;
- top; 0;
+ top: 0;
  right: 0;
  transform: translate(1px, -3px);
 }
@@ -130,8 +130,6 @@ body{
 }
 .buttons > button{
  background : #B4B9BF;
-/* border: 5px solid #2BF7F6;
- border-radius: 50%;*/
  border: none;
  border-radius: 50%;
  width: 50px;
@@ -153,7 +151,6 @@ i{
 .link{
  text-decoration: none;
  display: block;
- /*border: 3px solid #2BF7F6;*/
  border: none;
  padding: 10px 5px;
  margin: 1.2rem auto;
@@ -164,7 +161,22 @@ i{
 .link > i{
  color: #F1F1F1;
 }
-
+.listBtn{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.closeListBtn{
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.closeListBtn, .listBtn{
+  background: none;
+  border: none;
+  font-size: 3rem;
+}
 .songList{
   display: none;
   flex-direction: column;
@@ -176,7 +188,7 @@ i{
   left: 0;
   right: 0;
   height: 70vh;
-  overflow: scroll;
+  overflow: auto;
   background: #F1F1f1;
   border-radius: 1.2rem 1.2rem 0 0;
   padding: 2rem 1rem 0;
@@ -184,18 +196,27 @@ i{
 
 .songDetails{
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  width: 98%;
+  width: 100%;
   aspect-ratio: 4/1;
   background: #DFE5EC;
   border-radius: 8px;
 }
+.down{
+  color: #212121;
+}
+
+#listDownloadBtn{
+  color: #212121;
+  width: 2px;
+}
 
 .songImg{
   width: 70px;
-  height: 70px;
+  aspect-ratio: 1/1;
   background: #B4B9BF;
   border-radius: 50%;
 }
@@ -213,5 +234,5 @@ i{
 }
 #song-name{
   font-family: 'Nunito', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
