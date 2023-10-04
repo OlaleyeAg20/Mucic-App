@@ -198,6 +198,11 @@ containerDiv.innerHTML = songList.map(function(e){
      <span id="artistName">${artist} <a id="listDownloadBtn" href="${sourceFile}" download><i class="fa down fa-download"></i></a></span>
      </div>
    </div>
+   <script>
+   document.getElementById("song-name").addEventListener("click", function(){
+   playingTrack.src = ${e}.sourceFile
+   })
+   </script>
     `
 }).join('')
 
