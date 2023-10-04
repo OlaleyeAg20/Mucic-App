@@ -2,6 +2,9 @@ import {songList} from '/data.js'
 import {startAnimation, pauseAnimation} from '/utils.js'
 
 //storing every button in the DOM to a variable
+let listBtn = document.getElementById("listBtn")
+let closeListBtn = document.getElementById("closeListBtn")
+let containerDiv = document.getElementById("songList")
 let playBtn = document.getElementById('playBtn')
 let pauseBtn = document.getElementById('pauseBtn')
 let nextBtn = document.getElementById('next')
@@ -69,6 +72,7 @@ function pauseEvent(){
  playingTrack.pause()
  pauseBtn.style.display = 'none'
  playBtn.style.display = 'inline'
+ 
 }
 
 playingTrack.addEventListener('ended', nextEvent)
@@ -184,4 +188,28 @@ document.onkeydown = (e) => {
     }
 };
 
+containerDiv.innerHTML = songList.map(function(e){
+    const { songTitle, sourceFile, artist} = e
+    return `
+   <div class="songDetails">
+     <img src="" class="songImg">
+     <div class="songTitle">
+     <span id="song-name">${songTitle}</span>
+     <span id="artistName">${artist} <a id="listDownloadBtn" href="${sourceFile}" download><i class="fa down fa-download"></i></a></span>
+     </div>
+   </div>
+    `
+}).join('')
 
+listBtn.addEventListener("click", function(){
+  containerDiv.style.display = "flex"
+  closeListBtn.style.display = "block"
+})
+closeListBtn.addEventListener("click", function(){
+  containerDiv.style.display = "none"
+  closeListBtn.style.display = "none"
+})
+
+document.getElementById("song-name").addEventListener("click", function(){
+  songIndex = songList.indexOf(e)
+})
