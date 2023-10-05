@@ -209,3 +209,8 @@ closeListBtn.addEventListener("click", function(){
   containerDiv.style.display = "none"
   closeListBtn.style.display = "none"
 })
+
+document.getElementById("song-name").addEventListener("click", function(){
+  songIndex++
+})
+
