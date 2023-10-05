@@ -3,7 +3,7 @@ const songList = [
     songTitle: "Coming_for_You",
 artist: "SwitchOTR",
 sourceFile: "music/SwitchOTR_-_Coming_for_You.mp3",
-index: 0,
+index: 0, 
 },
   {
     songTitle: "Ed Sheeran Castle On The Hill",
