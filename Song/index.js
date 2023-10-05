@@ -213,6 +213,6 @@ closeListBtn.addEventListener("click", function(){
 
 document.addEventListener('click', function(e){
   if(e.target.dataset.play){
-    playingTrack.src = e.target.dataset.play
+    songIndex = songList.indexOf(e)
   }
 })
