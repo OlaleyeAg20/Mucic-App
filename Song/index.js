@@ -212,6 +212,6 @@ closeListBtn.addEventListener("click", function(){
 })
 
 document.getElementById("playNow").addEventListener("click", function(){
-  songIndex++
+  console.log("hello")
 })
 
