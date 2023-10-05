@@ -196,7 +196,7 @@ containerDiv.innerHTML = songList.map(function(e){
      <div class="songTitle">
      <span id="song-name">${songTitle}</span>
      <span id="artistName">${artist} <a id="listDownloadBtn" href="${sourceFile}" download><i class="fa down fa-download"></i></a></span>
-     <button id="playNow">Play</button>
+     <button id="playNow" data-play="${sourceFile}">Play</button>
      </div>
    </div>
     `
@@ -211,7 +211,8 @@ closeListBtn.addEventListener("click", function(){
   closeListBtn.style.display = "none"
 })
 
-document.getElementById("playNow").addEventListener("click", function(){
-  console.log("hello")
+document.addEventListener('click', function(e){
+  if(e.target.dataset.play){
+    playingTrack.src = e.target.dataset.play
+  }
 })
-
