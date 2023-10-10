@@ -27,7 +27,36 @@ progressContainer.addEventListener('click', setProgress);
 
 let songIndex = 0
 
+containerDiv.innerHTML = songList.map(function(e){
+    const { songTitle, sourceFile, artist} = e
+    return `
+   <div class="songDetails">
+     <img src="icon.png" class="songImg">
+     <div class="songTitle">
+     <span id="song-name">${songTitle}</span>
+     <span id="artistName">${artist} <a id="listDownloadBtn" href="${sourceFile}" download><i class="fa down fa-download"></i></a></span>
+     <button id="playNow" data-play="${sourceFile}">Play</button>
+     </div>
+   </div>
+    `
+}).join('')
 
+listBtn.addEventListener("click", function(){
+  containerDiv.style.display = "flex"
+  closeListBtn.style.display = "block"
+})
+closeListBtn.addEventListener("click", function(){
+  containerDiv.style.display = "none"
+  closeListBtn.style.display = "none"
+})
+
+document.addEventListener('click', function(e){
+  if(e.target.dataset.play){
+    songIndex = e.index
+    playingTrack.src = e.sourceFile
+  }
+})
+      
 
 let downloadBtn = document.getElementById('link')
 
@@ -187,33 +216,3 @@ document.onkeydown = (e) => {
        
     }
 };
-
-containerDiv.innerHTML = songList.map(function(e){
-    const { songTitle, sourceFile, artist} = e
-    return `
-   <div class="songDetails">
-     <img src="icon.png" class="songImg">
-     <div class="songTitle">
-     <span id="song-name">${songTitle}</span>
-     <span id="artistName">${artist} <a id="listDownloadBtn" href="${sourceFile}" download><i class="fa down fa-download"></i></a></span>
-     <button id="playNow" data-play="${sourceFile}">Play</button>
-     </div>
-   </div>
-    `
-}).join('')
-
-listBtn.addEventListener("click", function(){
-  containerDiv.style.display = "flex"
-  closeListBtn.style.display = "block"
-})
-closeListBtn.addEventListener("click", function(){
-  containerDiv.style.display = "none"
-  closeListBtn.style.display = "none"
-})
-
-document.addEventListener('click', function(e){
-  if(e.target.dataset.play){
-    songIndex = e.index
-    playingTrack.src = e.sourceFile
-  }
-})
