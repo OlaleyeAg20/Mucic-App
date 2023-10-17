@@ -17,13 +17,13 @@ body{
     font-family: sans-serif;
     max-width: 460px;
     margin: 0 auto;
-    
+    color: #1F242D;
 }
 .svg{
  width: 45%;
 }
 .loadContainer{
- color: #2BF7F6;
+ color: #1F242D;
  margin: 10px auto;
  text-align: center;
 }
@@ -45,7 +45,7 @@ body{
  display: none;
 }
 .bar{
- background: #f1f1f1;
+ background: #1F242D;
  height: 10%;
  width: 10px;
  border-radius: 50px;
@@ -87,7 +87,7 @@ body{
 }
 .progress-container{
  width: 100%;
- background: #F1F1F180;
+ background: #1F242D80;
  border-radius: 20px;
  height: 4px;
  margin: 10vh auto 20px;
@@ -103,13 +103,12 @@ body{
 }
 .timer{
  margin-bottom: 30px;
- color: #f1f1f1;
  display: flex;
  justify-content: space-between;
  width: 100%;
 }
 .circle{
- background: #F1F1F1;
+ background: #1F242D;
  width: 10px;
  aspect-ratio: 1/1
  border-radius: 50%;
@@ -122,7 +121,7 @@ body{
  width: 100%;
  margin: 25px auto;
  text-align: center;
- color: #F1F1F1;
+ color: #1F242D;
 }
 .buttons{
  width: 100%;
@@ -148,7 +147,7 @@ button,.circle {
  cursor: pointer;
 }
 i{
- color: #F1F1F1;
+ color: #1F242D;
 }
 
 .link{
@@ -162,7 +161,7 @@ i{
  width: 5rem;
 }
 .link > i{
- color: #F1F1F1;
+ color: #1F242D;
 }
 .listBtn{
   position: absolute;
