@@ -1,5 +1,11 @@
 const songList = [
   {
+    songTitle: "Party No dey Stop (remix)",
+artist: "Adekunle Gold",
+sourceFile: "party-no-dey-stop-jayo-byron-messia-remix-1__1698435925.m4a",
+index: 0, 
+},
+  {
     songTitle: "Alimi",
 artist: "Portable",
 sourceFile: "music/alimi__1695839924.m4a",
