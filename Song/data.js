@@ -1,8 +1,8 @@
 const songList = [
   {
-    songTitle: "Party No dey Stop (remix)",
+songTitle: "Party No dey Stop (remix)",
 artist: "Adekunle Gold",
-sourceFile: "party-no-dey-stop-jayo-byron-messia-remix-1__1698435925.m4a",
+sourceFile: "music/party-no-dey-stop-jayo-byron-messia-remix-1__1698435925.m4a",
 index: 0, 
 },
   {
