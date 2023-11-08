@@ -185,15 +185,19 @@ i{
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   height: 70vh;
   overflow: auto;
   background: #F1F1f1;
   border-radius: 1.2rem 1.2rem 0 0;
   padding: 2rem 1rem 0;
+}
+@media (max-width: 720px{
+.songList{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 }
 @media (min-width: 720px){
   body{
