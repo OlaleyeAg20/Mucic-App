@@ -30,16 +30,22 @@ let songIndex = 0
 containerDiv.innerHTML = songList.map(function(e){
     const { songTitle, sourceFile, artist} = e
     return `
-   <div class="songDetails">
+   <div class="songDetails" data-play="${sourceFile}">
      <img src="icon.png" class="songImg">
      <div class="songTitle">
      <span id="song-name">${songTitle}</span>
      <span id="artistName">${artist} <a id="listDownloadBtn" href="${sourceFile}" download><i class="fa down fa-download"></i></a></span>
-     <button id="playNow" data-play="${sourceFile}">Play</button>
+     <button id="playNow">Play</button>
      </div>
    </div>
     `
 }).join('')
+
+document.addEventListener('click', function(e){
+  if(e.target.dataset.play){
+    playingTrack.src = e.sourceFile
+  }
+})
 
 listBtn.addEventListener("click", function(){
   containerDiv.style.display = "flex"
@@ -50,12 +56,7 @@ closeListBtn.addEventListener("click", function(){
   closeListBtn.style.display = "none"
 })
 
-document.addEventListener('click', function(e){
-  if(e.target.dataset.play){
-    songIndex = e.index
-    playingTrack.src = e.sourceFile
-  }
-})
+
       
 
 let downloadBtn = document.getElementById('link')
